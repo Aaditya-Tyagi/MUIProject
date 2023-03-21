@@ -1,14 +1,20 @@
-import '@fontsource/roboto/300.css'
-import { Button } from '@mui/material'
+import Feed from './Feed'
+import Navbar from './Navbar'
+import Rightbar from './Rightbar'
+import Sidebar from './Sidebar'
+import { Box, Stack } from '@mui/material'
 
-function App () {
+export default function App () {
   return (
-    <div className='App'>
-      <Button variant='text'>Text</Button>
-      <Button variant='contained' color="secondary" size='small'>Contained</Button>
-      <Button variant='outlined'>Outlined</Button>
-    </div>
+    <>
+      <Box>
+        <Navbar />
+        <Stack direction='row' spacing={2} justifyContent={'space-evenly'}>
+          <Sidebar />
+          <Feed />
+          <Rightbar />
+        </Stack>
+      </Box>
+    </>
   )
 }
-
-export default App
