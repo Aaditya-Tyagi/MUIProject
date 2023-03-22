@@ -1,11 +1,20 @@
 import React from 'react'
+import Post from './Post'
 import { Box } from '@mui/material'
 
-const Feed = () => {
+function Feed () {
   return (
-    <Box bgcolor='skyblue' flex={4} p={2}>
-      Feed
-    </Box>
+    <>
+      <Box flex={4} p={2}>
+        <Post></Post>
+        <Post></Post>
+        <Post></Post>
+        <Post></Post>
+        <Post></Post>
+        <Post></Post>
+        <Post></Post>
+      </Box>
+    </>
   )
 }
 

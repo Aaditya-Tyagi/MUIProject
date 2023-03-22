@@ -41,8 +41,8 @@ const UserBox = styled(Box)(({ theme }) => ({
     display: 'none'
   }
 }))
-const Avatarbox=styled(Popover)(({theme})=>({
-  marginTop:'10px'
+const Avatarbox = styled(Popover)(({ theme }) => ({
+  marginTop: '10px'
 }))
 
 const Navbar = () => {
@@ -96,7 +96,7 @@ const Navbar = () => {
         TransitionComponent={Fade}
         anchorOrigin={{
           vertical: 'bottom',
-          horizontal: 'left',
+          horizontal: 'left'
         }}
       >
         <MenuItem>Profile</MenuItem>
